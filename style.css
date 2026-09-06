@@ -96,3 +96,156 @@ body {
     padding: 1.5rem;
     margin-top: 3rem;
 }
+
+
+/*Creacion de estilos para el modo oscuro*/
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .pokemon-card {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.dark-mode .pokemon-card h3 {
+    color: #ffffff;
+}
+
+.dark-mode .hero-section {
+    color: #ffffff;
+}
+/*
+.dark-mode {
+    background-color: #2c3e50;
+    color: #f4f5f7;
+}
+
+.dark-mode .header {
+    background-color: #ef5350;
+}
+
+.dark-mode .navbar {
+    background-color: #34495e;
+}
+
+.dark-mode .main-content {
+    background-color: #34495e;
+}
+
+.dark-mode .pokemon-card {
+    background-color: #2c3e50;
+}
+
+.dark-mode .pokemon-card h3 {
+    color: #f4f5f7;
+}
+
+.dark-mode .pokemon-card .type {
+    color: #bdc3c7;
+}*/
+
+/*Favoritos*/
+.btn-favorito {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f4f5f7;
+    color: #333;
+}
+
+.btn-favorito.favorito {
+    background-color: #ffe0e0;
+    color: #e53935;
+}
+
+#formulario-opinion {
+    display: none;
+}
+
+#formulario-opinion.mostrar {
+    display: block;
+}
+
+/* Estilos para el formulario de opinión */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.mostrar {
+    display: flex;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#formulario-opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario-opinion input,
+#formulario-opinion textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#formulario-opinion textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+/*Estilos para el formulario de opinión modo oscuro*/
+.dark-mode .modal-contenido {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.dark-mode .modal-contenido label {
+    color: white;
+}
+
+.dark-mode .modal-contenido h2 {
+    color: white;
+}
+
+.dark-mode .modal-contenido input,
+.dark-mode .modal-contenido textarea {
+    background-color: #1e1e1e;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .cerrar-modal {
+    color: white;
+}

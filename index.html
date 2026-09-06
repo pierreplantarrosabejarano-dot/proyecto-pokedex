@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex - Grupo 02 Pierre Plantarrosa</title>
+    <title>Pokedex - Grupo 02</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -14,29 +14,63 @@
 
     <header>
         <h1>Pokedex Virtual</h1>
+        <button id="cambiar-tema">🌙 Modo oscuro</button>
     </header>
 
     <nav class="navbar">
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#pokedex">Ver Pokemones</a></li>
-            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#acerca">Favoritos</a></li>
         </ul>
     </nav>
 
     <main>
+        <section class="opinion-section">
+            <button id="btn-opinion">💬 Dar mi opinión</button>
+        </section>
+
+<div id="modal-opinion" class="modal">
+
+    <div class="modal-contenido">
+
+        <button id="cerrar-modal" class="cerrar-modal">✕</button>
+
+        <h2>💬 Déjanos tu opinión</h2>
+
+        <form id="formulario-opinion">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" placeholder="Escribe tu opinión"></textarea>
+
+            <button type="submit">Enviar opinión</button>
+
+            <p id="mensaje-formulario"></p>
+
+        </form>
+
+    </div>
+
+</div>
         <section id="inicio" class="hero-section">
             <h2>Encuentra a tu Pokemon favorito</h2>
             <p>Explora nuestro catalogo de pokemons. Proximamente con la PokeAPI conectada</p>
         </section>
 
-        <section id="pokedex" class="pokedex-grid">
+        <section id="pokedex">
+
+            <button id="toggle-pokemon">Mostrar / Ocultar Pokémon</button>
+                <div class="pokedex-grid">
 
             <article class="pokemon-card">
                 <img
                     src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png">
                 <h3>#001 Bulbasaur</h3>
                 <p class="type">Planta / Veneno</p>
+                <button class="btn-favorito">♡ Favorito</button>
             </article>
 
             <article class="pokemon-card">
@@ -44,6 +78,7 @@
                     src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png">
                 <h3>#004 Charmander</h3>
                 <p class="type">Fuego</p>
+                <button class="btn-favorito">♡ Favorito</button>
             </article>
 
             <article class="pokemon-card">
@@ -51,8 +86,9 @@
                     src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png">
                 <h3>#007 Squirtle</h3>
                 <p class="type">Agua</p>
+                <button class="btn-favorito">♡ Favorito</button>
             </article>
-
+                </div>
         </section>
     </main>
 
@@ -60,5 +96,6 @@
         <p>Programacion Web I - INF 240 | Grupo 02</p>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>
