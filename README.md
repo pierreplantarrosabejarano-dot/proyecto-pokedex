@@ -22,9 +22,8 @@ La versión estática y maquetada del proyecto se encuentra desplegada y visible
 
 ---
 
-## Vida del proyecto (JavaScript)
-* **JavaScript:** Uso del DOM mediante JavaScript, uso de comportamientos, control de modo oscuro, control de pokemones favoritos(`<GetElementByID>`, `<querySelectorAll>`, `<forEach>`, `<addEventListener>`, `<contains>`, `<toggle>`, `<display>`).
-
+## 🧠 Vida del proyecto (JavaScript)
+* **JavaScript:** Uso del DOM mediante JavaScript, manejo de eventos e interacción, control de modo oscuro, control de pokemones favoritos (`getElementById`, `querySelectorAll`, `forEach`, `addEventListener`, `contains`, `toggle`, `display`).
 
 ---
 
@@ -61,6 +60,38 @@ Ejemplo de la respuesta que devolverá el endpoint `GET /api/pokemon/1`:
     "defensa": 49,
     "velocidad": 45
   },
-  "imagen_url": "[https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png)",
+  "imagen_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
   "descripcion": "Una extraña semilla fue plantada en su espalda al nacer."
 }
+```
+
+---
+
+## 🏗️ Arquitectura del Proyecto (Etapa 2)
+
+### 1. Diagrama Cliente-Servidor
+El siguiente esquema ilustra la comunicación entre las tres capas principales de la aplicación:
+
+```mermaid
+graph LR
+    A[FrontEnd estático<br/>HTML / CSS / JS] <-->|Peticiones HTTP/REST| B(API BackEnd<br/>Node.js / Express)
+    B <-->|Consultas a la DB| C[(Base de Datos)]
+```
+
+### 2. Flujo de Datos
+Recorrido detallado de una petición típica desde la interfaz hasta la pantalla:
+
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Pantalla (DOM)
+    participant Fetch (JS)
+    participant API (Backend)
+    
+    Usuario->>Pantalla (DOM): 1. Acción: Clic en "Ver Bulbasaur"
+    Pantalla (DOM)->>Fetch (JS): 2. Intercepta evento
+    Fetch (JS)->>API (Backend): 3. fetch('/api/pokemon/1')
+    API (Backend)-->>Fetch (JS): 4. Retorna { id: 1, nombre: "Bulbasaur"... } (JSON)
+    Fetch (JS)-->>Pantalla (DOM): 5. Procesa el JSON
+    Pantalla (DOM)->>Usuario: 6. Renderiza la tarjeta visualmente
+```
