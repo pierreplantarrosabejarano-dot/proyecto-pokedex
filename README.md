@@ -131,7 +131,7 @@ En la cuadrícula de la Pokédex, el ojo del usuario es guiado intencionalmente 
 Como parte de la Etapa 2, se diseñó un prototipo interactivo que sirve como entregable de diseño y será el plano principal para la futura construcción del proyecto utilizando React[cite: 6].
 
 ### Enlace al Prototipo
-🔗 **[Ver Prototipo Interactivo en Figma]([ENLACE_DE_TU_FIGMA_AQUI])**
+🔗 **https://www.figma.com/design/sibBlzyt5Xu9Kle1vGMCuz/Proyecto-Pokedex?node-id=0-1&t=TfcPuCkKn3z66wau-1**
 
 ### Resumen del Diseño
 Siguiendo las directrices del proyecto, el archivo de Figma incluye:
