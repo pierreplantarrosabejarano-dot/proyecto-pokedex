@@ -125,3 +125,17 @@ En la cuadrícula de la Pokédex, el ojo del usuario es guiado intencionalmente 
 1. **Primer nivel de atención:** La **imagen** del Pokémon (ubicada al centro, con un tamaño predominante de 120x120px).
 2. **Segundo nivel de atención:** El **número y nombre** del Pokémon (etiqueta H3, con un color oscuro que contrasta con la tarjeta blanca).
 3. **Tercer nivel de atención:** Los **tipos** del Pokémon (texto más pequeño y en color gris tenue, sirviendo como información complementaria).
+
+## 🖌️ Prototipado en Figma (Etapa 4)
+
+Como parte de la Etapa 2, se diseñó un prototipo interactivo que sirve como entregable de diseño y será el plano principal para la futura construcción del proyecto utilizando React[cite: 6].
+
+### Enlace al Prototipo
+🔗 **[Ver Prototipo Interactivo en Figma]([ENLACE_DE_TU_FIGMA_AQUI])**
+
+### Resumen del Diseño
+Siguiendo las directrices del proyecto, el archivo de Figma incluye:
+1. **Estilos Locales:** Se registraron la paleta de colores y la escala tipográfica documentadas en la Mini Guía de Estilo[cite: 6].
+2. **Pantallas Diseñadas:** Se crearon mockups visuales basados en wireframes previos[cite: 6], cubriendo el flujo principal de la aplicación (Inicio, Catálogo Pokédex y Detalle).
+3. **Componentes Reutilizables:** Se modularizó el diseño creando componentes base, incluyendo un botón estándar y la tarjeta de presentación de cada Pokémon[cite: 6].
+4. **Navegación Interactiva:** Se configuró el modo *Prototype* para enlazar las pantallas, permitiendo simular la experiencia de usuario y el flujo de navegación[cite: 6].
